@@ -55,4 +55,17 @@ module.exports = {
       [FuseV1Options.OnlyLoadAppFromAsar]: true,
     }),
   ],
+  publishers: [
+    {
+      name: '@electron-forge/publisher-github',
+      config: {
+        repository: {
+          owner: 'rakeshvngowda',
+          name: 'rock-elecron-app'
+        },
+        prerelease: false,
+        draft: true
+      }
+    }
+  ]
 };
